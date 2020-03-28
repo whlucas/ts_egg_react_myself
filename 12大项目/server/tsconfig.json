@@ -1,0 +1,34 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "es2017", // 这里node环境可以直接用ES8
+    "module": "commonjs", // 配置编译目标的模块化标准,因为是node环境所以这里是commonjs
+    "strict": true,
+    "strictNullChecks": true, // null, undefined只能赋值给自己 自己加的
+    "removeComments": true,  // 编译结果移除注释 自己加的
+    "lib": ["esnext"], // 环境就直接用最新的es,不要浏览器环境了 自己加的
+    "noImplicitAny": false,
+    "experimentalDecorators": true, // 开启装饰器
+    "emitDecoratorMetadata": true, // ts里面类型约束作为元数据放到装饰器里面去
+    "esModuleInterop": true, // 在node环境用es6导入,避免报错
+    "charset": "utf8", 
+    "allowJs": false,
+    "pretty": true,
+    "noEmitOnError": false, // 发生错误的时候就不要生成结果了
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "strictPropertyInitialization": false,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "inlineSourceMap": true,
+    "importHelpers": true
+  },
+  "exclude": [
+    "app/public",
+    "app/views",
+    "node_modules*"
+  ]
+}

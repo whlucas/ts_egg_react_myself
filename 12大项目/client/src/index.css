@@ -1,0 +1,38 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+
+.container {
+	/* 我想让最外层的div铺满视口 */
+	/* 第一种方式,相对视口定位,然后填满 */
+	/* position: fixed;
+	width: 100%;
+	height: 100% */
+
+	/* 第二种方式 */
+	width: 100vw;
+	height: 100vh;
+	/* 因为里面的元素是flex: auto */
+	/* 为了让里面的元素填满,我外面的是弹性盒子 */
+	display: flex; 
+}
+
+.main{
+	padding: 1em
+}
+
+.tablePoster{
+	width: 50px;
+	border: 2px solid #fff;
+}

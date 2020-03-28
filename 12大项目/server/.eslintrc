@@ -1,0 +1,15 @@
+{
+	// 继承了其他的配置
+	"extends": "eslint-config-egg/typescript",
+	"parserOptions": {
+		"project": "./tsconfig.json"
+	},
+	// 自己加规则
+	"rules": {
+		"no-empty": 1,
+		"keyword-spacing": 0,
+		"semi":"off",
+		"@typescript-eslint/indent": ["error", "tab"],
+		"indent": ["error", "tab"],
+	}
+}
