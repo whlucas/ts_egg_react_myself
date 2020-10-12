@@ -182,7 +182,7 @@ export default class extends React.Component<IMovieState & IMovieTableEvents> {
                                 okText="确定"
                                 cancelText="取消"
                             >
-                                <Button type="danger" size="small">删除</Button>
+                                <Button danger size="small">删除</Button>
                             </Popconfirm>,
                         </div>
                     )
@@ -205,7 +205,7 @@ export default class extends React.Component<IMovieState & IMovieTableEvents> {
     }
 
     // 页码变化的时候直接调用传进来的函数
-    handleChange(pagination: PaginationConfig) {
+    handleChange(pagination: any) {
         this.props.onPageChange(pagination.current!)
     }
 
